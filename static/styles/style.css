@@ -150,12 +150,25 @@ a {
   color: var(--color-light);
 }
 
+a:hover {
+  color: var(--color-light-gray);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition: var(--transition-duration);
+}
+
 /**
    Приводим к единому цвету svg-элементы
   */
 svg *[fill] {
   fill: currentColor;
 }
+
 svg *[stroke] {
   stroke: currentColor;
 }
@@ -168,7 +181,7 @@ svg * {
 }
 
 title {
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /**
@@ -242,12 +255,85 @@ h6 {
 }
 
 .header-menu-link {
+  display: inline-flex;
+  align-items: center;
+  height: 90px;
+  text-decoration: none;
+
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  column-gap: 7px;
+}
+
+.header-menu-link.is-current::after {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding-inline: 26px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2; /* 200% */
   letter-spacing: 1.2px;
   text-transform: uppercase;
 
-  text-decoration: none;
+  background-color: var(--color-light);
+  border: none;
+  border-radius: var(--border-radius);
+
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.header-actions {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-burger-button {
+  display: inline-flex;
+  f
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+}
+
+.header-burger-button-line {
+  top: 5px;
+  left: 5px;
+
+  width: 6px;
+  height: 1px;
+
+  background-color: var(--color-light);
+
 }
