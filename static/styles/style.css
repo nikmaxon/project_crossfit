@@ -217,6 +217,8 @@ title {
   --container-padding-x: 15px;
 
   --transition-duration: 0.2s;
+
+  --header-height: 90px;
 }
 
 body {
@@ -264,6 +266,8 @@ h6 {
 
   padding-inline: 32px;
   background-color: var(--color-dark-alternate);
+
+  min-height: var(--header-height);
 }
 
 .header-menu-list {
@@ -275,7 +279,7 @@ h6 {
 .header-menu-link {
   display: inline-flex;
   align-items: center;
-  height: 90px;
+  height: var(--header-height);
   text-decoration: none;
 
   font-size: 12px;
@@ -375,6 +379,13 @@ h6 {
   .header-menu-link {
     height: 50px;
   }
+  .banner {
+    padding-inline: 15px;
+    row-gap: 10px;
+  }
+  .banner-info::before {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -396,6 +407,12 @@ h6 {
   .header-actions {
     column-gap: 15px;
   }
+  .banner-info {
+    margin-bottom: 5px;
+  }
+  .banner-info::before {
+    margin-right: 10px;
+  }
 }
 
 .banner {
@@ -403,7 +420,7 @@ h6 {
   flex-direction: column;
   justify-content: end;
 
-  min-height: 985px;
+  min-height: calc(100vh - var(--header-height));
   padding: 35px 70px;
 
   color: var(--color-light);
@@ -415,7 +432,7 @@ h6 {
 }
 
 .banner-info {
-  font-size: clamp(1.6vw, 30px);
+  font-size: clamp(16px, 1.6vw, 30px);
   font-style: normal;
   font-weight: 700;
   line-height: 1.27; /* 126.667% */
@@ -426,7 +443,7 @@ h6 {
 
 .banner-info::before {
   content: "";
-  width: min(10.1vw, 194px);
+  width: clamp(60px, 10.1vw, 194px);
   aspect-ratio: 1;
   margin-right: 30px;
 
@@ -484,5 +501,3 @@ h6 {
 .banner-pagination-button:not(.is-current):hover::after {
   border-color: var(--color-light-gray);
 }
-
-@media (max-width: )
