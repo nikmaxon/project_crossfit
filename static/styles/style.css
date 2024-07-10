@@ -265,6 +265,7 @@ h5,
 h6 {
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--color-light);
 }
 
 .header {
@@ -352,7 +353,7 @@ h6 {
 
 .button.arrow-btn::after {
   content: "";
-  background: url('/static/icons/white-arrow-icon.svg') center/70% no-repeat;
+  background: url("/static/icons/white-arrow-icon.svg") center/70% no-repeat;
   height: 100%;
   aspect-ratio: 1;
 
@@ -587,11 +588,62 @@ h6 {
   margin-top: calc(37px - 15px);
 }
 
+/* training-types */
+
+.training-types {
+  max-height: 304px;
+  margin-inline: auto;
+  padding: 70px 0px 120px 0px;
+}
+
+.training-types-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  background-color: var(--color-dark);
+
+  gap: 60px;
+}
+
+.training-types-item {
+  --trainingTypesItemBgIconSize: 85px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: clamp(50px, 7.813vw, 150px);
+  min-height: clamp(50px, 7.292vw, 140px);
+
+  row-gap: 15px;
+  
+  padding-top: var(--trainingTypesItemBgIconSize);
+  background: url('/static/icons/trans-down-left-arrow.svg') 100% 0/var(--trainingTypesItemBgIconSize) no-repeat;
+   
+
+}
+
+
+.training-types-item-text {
+  
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75; /* 175% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
 /* Адаптив*/
 
 @media (max-width: 1919px) {
   .motivation-card-image {
     margin-block: -20px;
+  }
+
+  .training-types-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -652,15 +704,34 @@ h6 {
   }
 
   /* motivation */
-  .motivation-card, .motivation-item:nth-child(even) .motivation-card {
+  .motivation-card,
+  .motivation-item:nth-child(even) .motivation-card {
     flex-direction: column-reverse;
   }
 
   .motivation-card {
     padding-block: 30px;
   }
-  
+
   .motivation-card-image {
     max-width: 60%;
   }
+
+  /* training-types */
+  .training-types-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px
+  }
+
+  .training-types-item {
+    --trainingTypesItemBgIconSize:80px;
+    row-gap: 15px;
+
+    background: url('/static/icons/trans-down-left-arrow.svg') 90% 0/var(--trainingTypesItemBgIconSize) no-repeat;
+  }
+
+  .training-types-img {
+    max-width: 120px;
+  }
+
 }
