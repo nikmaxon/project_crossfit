@@ -1,191 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kropp Fitness</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kropp Fitness</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/styles/style.css" />
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./static/styles/style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <a class="header-logo" href="/">
-      <img class="header-logo-image" src="./static/images/logo.png" alt="logo-img" width="135" height="25"
-        loading="lazy" />
-    </a>
-    <nav class="header-menu">
-      <ul class="header-menu-list">
-        <li class="header-menu-item">
-          <a href="/" class="header-menu-link is-current">Home</a>
-        </li>
-        <li class="header-menu-item">
-          <a href="/" class="header-menu-link">Pages</a>
-        </li>
-        <li class="header-menu-item">
-          <a href="/" class="header-menu-link">Portfolio</a>
-        </li>
-        <li class="header-menu-item">
-          <a href="/" class="header-menu-link">Blog</a>
-        </li>
-        <li class="header-menu-item">
-          <a href="/" class="header-menu-link">Shop</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <button class="header-book-button button" type="button">
-        Book now
-      </button>
-      <button class="header-burger-button" type="button" title="Text Open Menu">
-        <span class="visually-hidden">Open Menu</span>
-        <span class="header-burger-button-line"></span>
-        <span class="header-burger-button-line"></span>
-        <span class="header-burger-button-line"></span>
-      </button>
-    </div>
-  </header>
-
-  <main class="content">
-    <h1 class="visually-hidden">Kropp Fitness Club</h1>
-    <section class="banner">
-      <h2 class="visually-hidden">Upcomming-events</h2>
-      <div class="banner-body">
-        <div class="banner-info">
-          New event <br />
-          coming up /&nbsp;<time datetime="06-07">june 7</time>&nbsp;-&nbsp;
-          <time datetime="06-13">13</time>
-        </div>
-        <h3 class="banner-title">Crossfit</h3>
-      </div>
-      <div class="banner-pagination">
-        <ul class="banner-pagination-list">
-          <li class="banner-pagination-item">
-            <button class="banner-pagination-button" type="button"></button>
+  <body>
+    <header class="header">
+      <a class="header-logo" href="/">
+        <img
+          class="header-logo-image"
+          src="./static/images/logo.png"
+          alt="logo-img"
+          width="135"
+          height="25"
+          loading="lazy"
+        />
+      </a>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link is-current">Home</a>
           </li>
-          <li class="banner-pagination-item">
-            <button class="banner-pagination-button" type="button"></button>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Pages</a>
           </li>
-          <li class="banner-pagination-item">
-            <button class="banner-pagination-button is-current" type="button"></button>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Portfolio</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Blog</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Shop</a>
           </li>
         </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="header-book-button button" type="button">
+          Book now
+        </button>
+        <button
+          class="header-burger-button"
+          type="button"
+          title="Text Open Menu"
+        >
+          <span class="visually-hidden">Open Menu</span>
+          <span class="header-burger-button-line"></span>
+          <span class="header-burger-button-line"></span>
+          <span class="header-burger-button-line"></span>
+        </button>
       </div>
-    </section>
+    </header>
+    <main class="content">
+      <h1 class="visually-hidden">Kropp Fitness Club</h1>
+      <section class="banner">
+        <h2 class="visually-hidden">Upcomming-events</h2>
+        <div class="banner-body">
+          <div class="banner-info">
+            New event <br />
+            coming up /&nbsp;<time datetime="06-07">june 7</time>&nbsp;-&nbsp;
+            <time datetime="06-13">13</time>
+          </div>
+          <h3 class="banner-title">Crossfit</h3>
+        </div>
+        <div class="banner-pagination">
+          <ul class="banner-pagination-list">
+            <li class="banner-pagination-item">
+              <button class="banner-pagination-button" type="button"></button>
+            </li>
+            <li class="banner-pagination-item">
+              <button class="banner-pagination-button" type="button"></button>
+            </li>
+            <li class="banner-pagination-item">
+              <button
+                class="banner-pagination-button is-current"
+                type="button"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="motivation">
-      <h2 class="visually-hidden">motivation</h2>
-      <ul class="motivation-list">
-        <li class="motivation-item">
-          <div class="motivation-card container">
-            <div class="motivation-card-body">
-              <h3 class="motivation-card-title title-medium backgr-title" data-title="strong">
-                Be you, just stronger! <br />
-                Power is in you
-              </h3>
-              <div class="motivation-card-description description-light">
-                <p>Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota
-                </p>
+      <section class="motivation">
+        <h2 class="visually-hidden">motivation</h2>
+        <ul class="motivation-list">
+          <li class="motivation-item">
+            <div class="motivation-card container">
+              <div class="motivation-card-body">
+                <h3
+                  class="motivation-card-title title-medium backgr-title"
+                  data-title="strong"
+                >
+                  Be you, just stronger! <br />
+                  Power is in you
+                </h3>
+                <div class="motivation-card-description description-light">
+                  <p>
+                    Unum solum justo ex ius. Pro cu probo laboramus eius
+                    insolens euripidis te eos, ut agam tota
+                  </p>
+                </div>
+                <a href="/" class="motivation-card-btn button arrow-btn"
+                  >View more</a
+                >
               </div>
-              <a href="/" class="motivation-card-btn button arrow-btn">View more</a>
+              <img
+                class="motivation-card-image"
+                src="./static/images/motivation/1.jpg"
+                alt="man doing pull-ups"
+                width="518"
+                height="760"
+                loading="lazy"
+              />
             </div>
-            <img class="motivation-card-image" src="./static/images/motivation/1.jpg" alt="man doing pull-ups"
-              width="518" height="760" loading="lazy">
-          </div>
-        </li>
-        <li class="motivation-item">
-          <div class="motivation-card container">
-            <div class="motivation-card-body">
-              <h3 class="motivation-card-title title-medium backgr-title" data-title="start">
-                Today is the best <br />
-                day to start!
-              </h3>
-              <div class="motivation-card-description description-light">
-                <p>Sed abhorreant constituam consectetuer eu. At mei clita deserunt, his movet molestie nemore.
-                </p>
+          </li>
+          <li class="motivation-item">
+            <div class="motivation-card container">
+              <div class="motivation-card-body">
+                <h3
+                  class="motivation-card-title title-medium backgr-title"
+                  data-title="start"
+                >
+                  Today is the best <br />
+                  day to start!
+                </h3>
+                <div class="motivation-card-description description-light">
+                  <p>
+                    Sed abhorreant constituam consectetuer eu. At mei clita
+                    deserunt, his movet molestie nemore.
+                  </p>
+                </div>
+                <a href="/" class="motivation-card-btn button arrow-btn"
+                  >View more</a
+                >
               </div>
-              <a href="/" class="motivation-card-btn button arrow-btn">View more</a>
+              <img
+                class="motivation-card-image"
+                src="./static/images/motivation/2.jpg"
+                alt="man doing pull-ups"
+                width="518"
+                height="760"
+                loading="lazy"
+              />
             </div>
-            <img class="motivation-card-image" src="./static/images/motivation/2.jpg" alt="man doing pull-ups"
-              width="518" height="760" loading="lazy">
-          </div>
-        </li>
+          </li>
+        </ul>
+      </section>
 
-      </ul>
-    </section>
+      <section class="training-types container-wide ">
+        <h2 class="visually-hidden">Types of Training</h2>
+        <ul class="training-types-list">
+          <!-- 1 -->
+          <li class="training-types-item">
+            <img
+              class="training-types-img"
+              src="/static/icons/training/1.svg"
+              alt="training-type-img"
+              width="150"
+              height="140"
+              loading="lazy"
+            />
+            <h3 class="training-types-item-text">Maxpump</h3>
+          </li>
+          <!-- 2 -->
+          <li class="training-types-item">
+            <img
+              class="training-types-img"
+              src="/static/icons/training/2.svg"
+              alt="training-type-img"
+              width="150"
+              height="140"
+              loading="lazy"
+            />
+            <h3 class="training-types-item-text">aron gym</h3>
+          </li>
+          <!-- 3 -->
+          <li class="training-types-item">
+            <img
+              class="training-types-img"
+              src="/static/icons/training/3.svg"
+              alt="training-type-img"
+              width="150"
+              height="140"
+              loading="lazy"
+            />
+            <h3 class="training-types-item-text">fit & tone</h3>
+          </li>
+          <!-- 4 -->
+          <li class="training-types-item">
+            <img
+              class="training-types-img"
+              src="/static/icons/training/4.svg"
+              alt="training-type-img"
+              width="150"
+              height="140"
+              loading="lazy"
+            />
+            <h3 class="training-types-item-text">forza</h3>
+          </li>
+          <!-- 5 -->
+          <li class="training-types-item">
+            <img
+              class="training-types-img"
+              src="/static/icons/training/5.svg"
+              alt="training-type-img"
+              width="150"
+              height="140"
+              loading="lazy"
+            />
+            <h3 class="training-types-item-text">balance fitness</h3>
+          </li>
+          <!-- 6 -->
+          <li class="training-types-item">
+            <img
+              class="training-types-img"
+              src="/static/icons/training/6.svg"
+              alt="training-type-img"
+              width="150"
+              height="140"
+              loading="lazy"
+            />
+            <h3 class="training-types-item-text">body sculpt</h3>
+          </li>
+        </ul>
+      </section>
 
-    <section class="training-types">
-      <h2 class="visually-hidden">Types of Training</h2>
-      <ul class="training-types-list">
-        <!-- 1 -->
-        <li class="training-types-item">
-          <img class="training-types-img" src="/static/icons/training/1.svg" alt="training-type-img" width="150"
-            height="140" loading="lazy">
-          <h3 class="training-types-item-text">Maxpump</h3>
-        </li>
-        <!-- 2 -->
-        <li class="training-types-item">
-          <img class="training-types-img" src="/static/icons/training/2.svg" alt="training-type-img" width="150"
-            height="140" loading="lazy">
-          <h3 class="training-types-item-text">aron gym</h3>
-        </li>
-        <!-- 3 -->
-        <li class="training-types-item">
-          <img class="training-types-img" src="/static/icons/training/3.svg" alt="training-type-img" width="150"
-            height="140" loading="lazy">
-          <h3 class="training-types-item-text">fit & tone</h3>
-        </li>
-        <!-- 4 -->
-        <li class="training-types-item">
-          <img class="training-types-img" src="/static/icons/training/4.svg" alt="training-type-img" width="150"
-            height="140" loading="lazy">
-          <h3 class="training-types-item-text">forza</h3>
-        </li>
-        <!-- 5 -->
-        <li class="training-types-item">
-          <img class="training-types-img" src="/static/icons/training/5.svg" alt="training-type-img" width="150"
-            height="140" loading="lazy">
-          <h3 class="training-types-item-text">balance fitness</h3>
-        </li>
-        <!-- 6 -->
-        <li class="training-types-item">
-          <img class="training-types-img" src="/static/icons/training/6.svg" alt="training-type-img" width="150"
-            height="140" loading="lazy">
-          <h3 class="training-types-item-text">body sculpt</h3>
-        </li>
-      </ul>
-    </section>
+      <section class="join-us">
+        <div class="join-us__video-wrapper">
+          <video
+            class="join-us__video"
+            src=""
+            width="960"
+            height="600"
+            poster="/static/images/join_us/video-poster-img.jpg"
+          ></video>
+          <button class="join-us__video-play-button" type="button">Play</button>
+        </div>
+        <div class="join-us__body container">
+          <h2 class="join-us__title">Join Us</h2>
+          <form class="join-us__form">
+            <header class="join-us__form-header">
+              <h3
+                class="join-us__form-title backgr-title medium-title"
+                data-title="GO!"
+              >
+                Start here
+              </h3>
+              <div class="join-us__form-description">
+                fill the form below to start your journey
+              </div>
+            </header>
+            <div class="join-us__form-body">
+              <label for="user-name" class="visually-hidden">Name</label>
+              <label for="user-email" class="visually-hidden">email</label>
+              <input
+                type="text"
+                id="user-name"
+                class="join-us__form-input input"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                id="user-email"
+                class="join-us__form-input input"
+                type="email"
+                placeholder="Email"
+              />
+              <button
+                class="join-us__form-button button arrow-btn"
+                type="submit"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-    <section class="join-us">
-      <div class="join-us__video-wrapper">
-        <video class="join-us__video" src="" width="960" height="600"
-          poster="/static/images/join_us/video-poster-img.jpg"></video>
-        <button class="join-us__video-play-button" type="button">Play</button>
+      <section class="location container-wide">
+        <img
+          class="location__map"
+          src="./static/images/location/map.jpg"
+          alt="map-img"
+          width="960"
+          height="600"
+          loading="lazy"
+        />
+        <div class="location__body">
+          <h2
+            class="location__body-title backgr-title medium-title"
+            data-title="look"
+          >
+            Find us near you
+          </h2>
+          <p class="location__body-text">
+            Nec suas signiferumque id. An eum labore commodo principes. <br />
+            Usu diam noluisse cu, nam adipisci
+          </p>
+          <button class="location__body-btn button arrow-btn" type="button">
+            view more
+          </button>
+        </div>
+      </section>
+    </main>
 
-      </div>
-      <div class="join-us__body container">
-        <h2 class="join-us__title">Join Us</h2>
-        <form class="join-us__form">
-          <header class="join-us__form-header">
-            <h3 class="join-us__form-title backgr-title" data-title="GO!">Start here</h3>
-            <div class="join-us__form-description">fill the form below to start your journey</div>
-          </header>
-          <div class="join-us__form-body">
-            <label for="user-name" class="visually-hidden">Name</label>
-            <label for="user-email" class="visually-hidden">email</label>
-            <input type="text" id="user-name" class="join-us__form-input input" type="text" placeholder="Name">
-            <input type="text" id="user-email" class="join-us__form-input input" type="email" placeholder="Email">
-            <button class="join-us__form-button button arrow-btn" type="submit">Subscribe</button>
-          </div>
-        </form>
-
-      </div>
-    </section>
-  </main>
-
-  <footer></footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
