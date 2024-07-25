@@ -528,6 +528,19 @@ h6 {
   flex-shrink: 0;
 }
 
+.description-light-upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-light);
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.65; /* 165% */
+  text-transform: uppercase;
+}
+
 .motivation-card-description {
   width: 400px;
   margin-block: 15px;
@@ -561,7 +574,26 @@ h6 {
   z-index: 2;
 }
 
+.backgr-title-centered {
+  position: relative;
+  z-index: 2;
+}
+
+
 .backgr-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: calc(100% + 8px);
+  bottom: calc(100% - 35px);
+
+  width: 26px;
+  height: 40px;
+
+  background: url("/static/icons/white-plus-icon.svg") center/contain no-repeat;
+}
+
+.backgr-title-centered::before {
   content: "";
   display: block;
   position: absolute;
@@ -591,6 +623,27 @@ h6 {
   z-index: -1;
   top: -0.3em;
   left: -0.6em;
+}
+
+.backgr-title-centered::after {
+  content: attr(data-title);
+  color: transparent;
+
+  font-family: var(--font-family-accent);
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1; /* 100% */
+  text-transform: uppercase;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-dark-gray);
+
+  position: absolute;
+  z-index: -1;
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 
 .motivation-card-btn {
@@ -643,6 +696,11 @@ h6 {
 }
 
 /* join-us */
+
+.join-us {
+  background-color: var(--color-dark-alternate);
+}
+
 .input {
   display: inline-flex;
   border: var(--border-gray);
@@ -801,7 +859,6 @@ h6 {
   row-gap: 10px;
 }
 
-
 .join-us__form-description {
   display: flex;
   justify-content: center;
@@ -838,9 +895,14 @@ h6 {
   translate: -50% -50%;
 }
 
+.join-us__form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* location */
-
-
 
 .location {
   display: flex;
@@ -874,6 +936,36 @@ h6 {
   left: 50%;
   translate: -50% -50%;
 }
+
+/* family */
+
+.family {
+  background-color: var(--color-dark-alternate);
+}
+
+.family__title {
+  padding-top: 130px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  row-gap: 10px;
+}
+
+.family__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 25px;
+
+  margin-top: 60px;
+}
+
+
 
 /* Адаптив*/
 
